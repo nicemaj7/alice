@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:300,400,700|Pacifico");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif; 
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Header */
+/* Header Styles */
+.header {
+    height: 10vh;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav menu */
+    align-items: center; /* Center items vertically */
+    background-color: #1c1c1c; /* Background color */
+    color: #d5d5d5; /* Text color */
+    padding: 10px 20px; /* Padding around the header */
+}
+
+/* Logo Styles */
+.header .logo {
+    display: flex; /* Flexbox allows easy alignment */
+    align-items: center; /* Center items in logo section */
+}
+
+.header .logo img {
+    height: 70px; /* Set the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Styles */
+.header nav {
+    display: flex; /* Display nav items in a row */
+}
+
+.header nav a {
+    color: #ffffff; /* Color of links */
+    text-decoration: none; /* Remove underline */
+    padding: 0 50px; /* Padding between links */
+    transition: color 0.2s; /* Smooth color transition */
+    font-size: 1.5em;
+}
+
+.header nav a:hover {
+    color: #f48126; /* Change the color on hover */
+}
+
+/* Banner */
+
+#banner {
+    background-color: #0c0c0c; /* Set a darker background color */
+    color: #f7be99; /* Default text color */
+    padding: 13em 0 11em 0; /* Vertical padding */
+  
+    /* Full Width Styles */
+    height: 85vh;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    position: relative; /* Maintain position context */
+    left: 0; /* Align to the left edge of the screen */
+    right: 0; /* Align to the right edge of the screen */
+    margin-left: 0; /* Ensure no margin on the left */
+    margin-right: 0; /* Ensure no margin on the right */
+    overflow: hidden; /* Prevent any overflow issues */
+    z-index: 9999; /* Stacking order so that it appears above other elements */
+}
+
+
+#banner input, #banner select, #banner textarea {
+    color: #ffffff;
+}
+
+#banner a {
+    color: #ffffff;
+}
+
+#banner strong, #banner b {
+    color: #ffffff;
+}
+
+#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
+    color: #fff;
+}
+
+#banner blockquote {
+    border-left-color: #fff; /* White left border for blockquotes */
+}
+
+#banner code {
+    background: none; /* No background for code elements */
+    border-color: #fff; /* White border color for code elements */
+}
+
+#banner hr {
+    border-bottom-color: #fff; /* White border color for horizontal rules */
+}
+
+
+#banner input[type="submit"],
+#banner input[type="reset"],
+#banner input[type="button"],
+#banner button,
+#banner .button {
+    background-color: #000000; /* Light background color for buttons */
+    color: #ffffff !important; /* Text color for buttons, using !important to override other styles */
+}
+
+#banner input[type="submit"]:hover,
+#banner input[type="reset"]:hover,
+#banner input[type="button"]:hover,
+#banner button:hover,
+#banner .button:hover {
+    background-color: #f7be99; /* Keeps the same color on hover */
+}
+
+#banner:after {
+    -moz-transition: opacity
+}
+
+#banner .inner {
+    max-width: 65em; /* Maximum width of the inner container */
+    width: calc(100% - 6em); /* Full width minus 6em for padding/margin */
+    margin: 0 auto; /* Center the inner container horizontally */
+    position: relative; /* Allows for absolutely positioned children */
+    z-index: 10000; /* Stacking context for overlaying elements */
+    line-height: 1.5; /* Line height for text elements inside */
+}
+
+@media screen and (max-width: 480px) {
+    #banner .inner {
+        max-width: 90%; /* Change max-width to 90% on small screens */
+        width: 90%; /* Set width to 90% on small screens */
+    }
+}
+
+#banner h1 {
+    font-size: 2em; /* Base font size for the main heading */
+    margin: 0 0 1em 0; /* Margin to space from the top and bottom */
+    padding: 0; /* Remove default padding */
+    letter-spacing: 5px; /* Add spacing between letters */
+    font-weight: 700; /* Set font weight to bold */
+}
+
+#banner h1 span {
+    font-weight: 500; /* Lighter font weight for the span inside h1 */
+}
+
+body.is-loading #banner:after {
+    opacity: 1; /* Set opacity to 1 when the body has the loading class */
+}
+
+
+/* copyright */
+
+.copyright {
+    background-color: #f48126; /* Set background color for the copyright section */
+    padding: 10px; /* Add some padding to the div for visual spacing */
+    text-align: center; /* Center text horizontally */
+    height: 8vh;
+    color: #ffffff;
+    margin: 0;
+    height: 5vh;
+}
+
+/* Main Body Style */
+.mainbody {
+    background-color: #ffffff; /* Set background color */
+    color: #000000; /* Default text color */
+    height: 85vh; /* Fixed height for the main body */
+    width: 100vw; /* Width of the main body */
+    position: relative; /* Maintain positioning context */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 50px; /* Optional padding */
+}
+
+.center_box {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: flex; /* Center items horizontally */
+    align-items: flex; /* Center items vertically */
+    width: 100vw; /* Width set to 100% of the viewport width */
+    height: 100vh; /* Height set to 100% of the viewport height */
+    position: fixed; /* Fixed positioning to cover entire screen */
+    top: 0;  /* Align to the top */
+    left: 0; /* Align to the left */
+    background-color: rgba(255, 255, 255, 0.9); /* Optional semi-transparent background */
+    z-index: 1000; /* Ensure it overlays above other content */
+}
+
+/* Heading Styles */
+.mainbody h3 {
+    font-size: 32px; /* Font size for headings */
+    font-weight: 500; /* Font weight */
+    text-align: left; /* Center the heading text */
+}
+
+/* Paragraph Styles */
+.mainbody p {
+    margin-bottom: 10px; /* Margin below paragraphs */
+}
+
+.credentials-text {
+    color: #f48126;
+}
+
+/* Form Control Container */
+.form-control {
+    position: relative; /* Position for absolutely positioned children */
+    width: 100%; /* Ensure full width */
+    margin-bottom: 10px; /* Space below form controls */
+}
+
+/* Label Styles */
+.form-control label {
+    font-size: 14px; /* Font size for labels */
+    display: block; /* Make labels block elements */
+}
+
+/* Input Styles */
+.form-control input {
+    width: 100%; /* Full width inputs */
+    padding: .5rem; /* Padding inside inputs */
+    border: 1px solid #dcdcdc; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 10px; /* Space above input */
+}
+
+/* Checkbox Styles */
+.check-box {
+    font-size: 12px; /* Font size for the checkbox label */
+}
+
+.error-message {
+    color: red; /* Set the text color to red */
+    font-weight: 500; /* Optional: make the text bold */
+    margin: 1em 0; /* Optional: add space around the message */
+    text-align: center; /* Optional: center align the text */
+}
+
